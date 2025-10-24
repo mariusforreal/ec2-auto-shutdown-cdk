@@ -1,0 +1,34 @@
+{
+  "version": "48.0.0",
+  "files": {
+    "901a9e30449f8f6fa2e94b99d3d50e727ce19e64287fa781f74686fd7df317dd": {
+      "displayName": "Ec2AutoShutdownFunction/Code",
+      "source": {
+        "path": "asset.901a9e30449f8f6fa2e94b99d3d50e727ce19e64287fa781f74686fd7df317dd",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "current_account-current_region-d0c5a407": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "901a9e30449f8f6fa2e94b99d3d50e727ce19e64287fa781f74686fd7df317dd.zip",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "68c6834f7fa7c2baa5c369e2c472b5eb2ddeb36037e6d9be5b6dd49b74fe7704": {
+      "displayName": "Ec2AutoShutdownStack Template",
+      "source": {
+        "path": "Ec2AutoShutdownStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region-c75efc79": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "68c6834f7fa7c2baa5c369e2c472b5eb2ddeb36037e6d9be5b6dd49b74fe7704.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}
