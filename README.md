@@ -11,11 +11,11 @@ This project deploys a Lambda function and an EventBridge (CloudWatch Events) ru
 
 ```mermaid
 flowchart LR
-    A[EventBridge schedule<br/>(18:00 UTC daily)] --> B[Lambda: Ec2AutoShutdownFunction]
-    B --> C[CloudWatch Metrics: CPUUtilization<br/>GetMetricData / GetMetricStatistics]
-    B --> D[EC2 API: DescribeInstances]
-    B -- stop/terminate --> E[EC2 API: StopInstances / TerminateInstances]
-    B --> F[CloudWatch Logs]
+  A["EventBridge schedule (18:00 UTC daily)"] --> B["Lambda: Ec2AutoShutdownFunction"]
+  B --> C["CloudWatch Metrics (CPUUtilization)"]
+  B --> D["EC2: DescribeInstances"]
+  B -- "stop/terminate" --> E["EC2: StopInstances / TerminateInstances"]
+  B --> F["CloudWatch Logs"]
 ```
 
 1. **Schedule**: EventBridge triggers the Lambda once per day at 18:00 UTC (configurable).
