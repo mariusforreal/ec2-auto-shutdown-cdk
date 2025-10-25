@@ -168,7 +168,7 @@ def lambda_handler(event, context):
 
 ---
 
-## Cleanup
+## Deployment Steps
 
 ```bash
 # 1. Clone the repository
