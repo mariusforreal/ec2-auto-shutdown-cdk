@@ -168,38 +168,10 @@ def lambda_handler(event, context):
 
 ---
 
-## Deployment Steps
+## Cleanup
 
 ```bash
-# 1. Clone the repository
-git clone https://github.com/mariusforreal/ec2-auto-shutdown.git
-cd ec2-auto-shutdown
 
-# 2. Create and activate a Python virtual environment
-python3 -m venv .venv
-source .venv/bin/activate
-
-# 3. Upgrade pip and install dependencies
-pip install --upgrade pip
-pip install -r requirements.txt
-
-# 4. (Optional) Verify AWS CDK installation
-npm install -g aws-cdk
-cdk --version
-
-# 5. Bootstrap your AWS environment (only once per account/region)
-cdk bootstrap
-
-# 6. Synthesize the CloudFormation template
-cdk synth
-
-# 7. Deploy the stack to AWS
-cdk deploy
-
-# 8. (Optional) Deactivate the virtual environment after deployment
-deactivate
-
-#9 Destroy your stack
 cdk destroy
 ```
 
